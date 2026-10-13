@@ -1,58 +1,59 @@
 # ThreeCreative OS Saviour 0.2.0
 
-A Windows 1-inspired desktop prototype, built as a bootable x86_64 disk image for experimentation, demos, and early-stage personal computing exploration.
+ThreeCreative OS Saviour is an early-access desktop environment built on the foundation of ThreeCreative-DOS Curiosity.
 
-This project is a concept OS distribution focused on a nostalgic, lightweight desktop experience. It is intended for enthusiasts, testers, and early adopters who want to boot a custom environment in a virtual machine or on supported hardware.
+This release is designed for testing, demonstration, and validation of the desktop experience and system features. It is not presented as a final consumer operating system release.
 
-**Note:** ThreeCreative OS Saviour 0.2.0 runs on the ThreeCreative-DOS Curiosity platform. There are no missing drivers for supported Curiosity hardware — the image includes the necessary drivers and integration to run on Curiosity installations.
+## Overview
 
-## Highlights
+Saviour provides a Windows 1-inspired tile-based interface with a lightweight desktop experience, built-in applications, and support for Curiosity-powered system features. It is intended for enthusiasts, testers, and early adopters evaluating the platform in a controlled environment.
 
-- Windows 1-inspired interface and layout
-- Lightweight desktop experience aimed at experimentation
-- Bootable x86_64 image suitable for USB install or VM testing
-- Built for early testing and demonstration purposes
-- Designed and distributed by ThreeCreative
+Built on the same foundation as ThreeCreative-DOS Curiosity, Saviour combines the proven core platform with a user-facing desktop layer that includes apps, utilities, browsing, settings, and gaming.
 
-## Features
+## Product status
 
-Saviour includes the following features out of the box:
+Status: Early access / alpha test build
 
-- Tile interface — the desktop is made up of separate tiles (clock, notepad, calculator, file manager, etc.) that can host different apps.
-- Mouse control — full mouse support alongside keyboard navigation.
-- Drivers — built-in support for storage, network cards, and common peripherals (Saviour uses Curiosity's driver stack).
-- Games — a small built-in games collection launchable from the UI.
-- Octell — ThreeCreative's built-in web browser (runs in the DOS background environment where applicable).
-- Wifi — wireless network connectivity with support for secured networks.
-- Settings — a central control panel for system, network, and display settings.
-- Defender — built-in security software to scan for threats and protect the system.
+This is an early-stage testing release intended for validation, feedback, and system evaluation. The project is still in active development, and the user experience, feature set, and compatibility may continue to evolve.
 
-## Screenshots
+## Core features
+
+- Tile-based desktop interface
+- Mouse and keyboard control
+- Built-in driver support for supported Curiosity hardware
+- Built-in games
+- Octell browser
+- Wi-Fi connectivity with support for secured networks
+- Central settings panel
+- Defender security tool
+- File manager and desktop utilities
+- Built on the ThreeCreative-DOS Curiosity platform
+
+## Screenshot
 
 ![ThreeCreative OS Saviour on Curiosity](tiles-desktop.png)
 
-*ThreeCreative OS Saviour 0.1.0 running on Curiosity, showing the desktop tiles, clock, calculator, files, and settings interface.*
-
 ## System requirements
 
-- x86_64-compatible machine or virtual machine
-- USB drive or disk image writer
-- 1 GB RAM minimum recommended for testing
-- Virtualization support recommended for safe evaluation
+- Compatible x86_64 hardware or virtual machine
+- USB drive or supported boot media
+- 1 GB RAM recommended
+- BIOS/UEFI access may be required for USB boot
+- Recommended for testing on disposable hardware or in a virtual machine
 
 ## Quick start
 
-### Option 1: Boot from USB on Windows
+### Boot from USB
 
 1. Download the release archive.
-2. Extract `ThreeCreative-OS-Saviour-0.2.0-x86_64.img`.
-3. Use Rufus to write the image to a USB stick.
-4. Reboot and enter BIOS/UEFI setup if USB boot is disabled.
+2. Extract the image file.
+3. Use Rufus to write the image to a USB drive.
+4. Reboot the system and enter BIOS/UEFI if USB boot is disabled.
 5. Select the USB device as the boot target.
 
-### Option 2: Boot in a virtual machine
+### Virtual machine
 
-Use a VM such as QEMU, VirtualBox, or VMware and attach the extracted `.img` as a hard disk.
+Use a virtual machine such as QEMU, VirtualBox, or VMware and attach the image as a hard disk.
 
 Example with QEMU:
 
@@ -60,32 +61,48 @@ Example with QEMU:
 qemu-system-x86_64 -m 1024 -hda ThreeCreative-OS-Saviour-0.2.0-x86_64.img -boot c
 ```
 
-## Important warnings
+## Important notes
 
-This is an early alpha project. It may contain incomplete functionality, rough UI behavior, or technical instability. This project is not an endorsed or production-grade operating system release.
+This release is intended for evaluation and testing. It may contain incomplete functionality, rough edges, or system limitations.
 
-WARNING: This project is not a safe replacement for a production system. Do not write the image to a drive containing important data without a backup. Always test in a VM or on a disposable device first.
+Use this software only on disposable hardware or in a virtual machine unless you fully understand the risks.
 
-## Project status
+## Support and contact
 
-Status: In development — Saviour is built on the same foundation as ThreeCreative-DOS Curiosity. Curiosity itself is finished with almost no errors and provides the underlying DOS environment and driver stack that Saviour uses. The DOS environment also supplies the Octell browser that Saviour can access.
+For support, testing feedback, licensing inquiries, or project discussions, contact ThreeCreative through the official project channels and website.
 
-This release is intended to demonstrate the concept and gather feedback, evaluation, and interest. It is not presented as a finished commercial product or open-source OS distribution.
+- Website: https://ThreeCreative.nl
+- Project owner: ThreeCreative
+
+## Roadmap
+
+Planned improvements include:
+
+- Improved desktop polish
+- Expanded app and utility set
+- More stable boot behavior
+- Better hardware compatibility validation
+- Improved settings and system workflows
+- Refined release packaging and support documentation
 
 ## Changelog
 
 See `CHANGELOG.md` for release history.
 
-## Contributing
+## License and rights
 
-See `CONTRIBUTING.md` for contribution rules, bug reporting expectations, and how to request support or feature work.
+This repository and its contents, including the bootable disk image, artwork, documentation, and project materials, are the proprietary property of ThreeCreative.
 
-## Security and verification
+All rights are reserved. Redistribution, modification, resale, or commercial reuse is not permitted without explicit written permission.
 
-For release verification, see `CHECKSUMS.txt`.
+## Disclaimer
 
-Keep in mind that a detached signature file may be added later when a private key is available for signing release artifacts.
+This project is provided as an early-access testing build. While every effort has been made to ensure stability and usability, this software is still under development. Use on a primary system is not recommended.
+
+ThreeCreative is not responsible for any data loss, corruption, device damage, or operational issues caused by using this software, including but not limited to installation, booting, testing, or system use on physical or virtual hardware.
+
+Use at your own risk. Always back up important data before testing or installing.
 
 ---
 
-ThreeCreative OS Saviour is a concept operating system experience inspired by classic desktop systems. It is presented as a prototype, not a complete production operating system.
+ThreeCreative OS Saviour is a desktop environment built on the Curiosity platform, developed for testing, validation, and future product evolution.
