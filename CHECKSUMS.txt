@@ -1,0 +1,26 @@
+# Release checksums
+
+This file is a template for verifying the integrity of the distributed release artifacts.
+
+Important:
+- Replace the placeholder values below with the actual SHA256 hashes generated from the release files.
+- Compute the checksums locally before publishing a release.
+- Only use the final published checksums for verification.
+
+Example commands:
+
+```bash
+sha256sum ThreeCreative-OS-Saviour-0.2.0-x86_64.img.zip
+sha256sum ThreeCreative-OS-Saviour-0.2.0-x86_64.img
+```
+
+Then replace the placeholder lines below with the actual output.
+
+---
+
+SHA256 (ThreeCreative-OS-Saviour-0.2.0-x86_64.img.zip) = <replace-with-actual-sha256>
+SHA256 (ThreeCreative-OS-Saviour-0.2.0-x86_64.img) = <replace-with-actual-sha256>
+
+---
+
+This repository does not include a detached signature file until a signing key is supplied and the release is signed by the project owner.
