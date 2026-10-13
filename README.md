@@ -4,6 +4,8 @@ A Windows 1-inspired desktop prototype, built as a bootable x86_64 disk image fo
 
 This project is a concept OS distribution focused on a nostalgic, lightweight desktop experience. It is intended for enthusiasts, testers, and early adopters who want to boot a custom environment in a virtual machine or on supported hardware.
 
+**Note:** ThreeCreative OS Saviour 0.2.0 runs on the ThreeCreative-DOS Curiosity platform. There are no missing drivers for supported Curiosity hardware — the image includes the necessary drivers and integration to run on Curiosity installations.
+
 ## Highlights
 
 - Windows 1-inspired interface and layout
@@ -13,6 +15,8 @@ This project is a concept OS distribution focused on a nostalgic, lightweight de
 - Designed and distributed by ThreeCreative
 
 ## Screenshots
+
+Included screenshot: assets/screenshots/ThreeCreative-Saviour-0.1.0-on-Curiosity.png
 
 > Placeholder for product screenshots and desktop captures.
 >
@@ -52,7 +56,7 @@ qemu-system-x86_64 -m 1024 -hda ThreeCreative-OS-Saviour-0.2.0-x86_64.img -boot 
 
 ## Important warnings
 
-This is an early alpha project. It may contain incomplete functionality, rough UI behavior, missing drivers, or technical instability. This project is not an endorsed or production-grade operating system release.
+This is an early alpha project. It may contain incomplete functionality, rough UI behavior, or technical instability. This project is not an endorsed or production-grade operating system release.
 
 WARNING: This project is not a safe replacement for a production system. Do not write the image to a drive containing important data without a backup. Always test in a VM or on a disposable device first.
 
