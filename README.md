@@ -16,16 +16,9 @@ This project is a concept OS distribution focused on a nostalgic, lightweight de
 
 ## Screenshots
 
-Included screenshot: assets/screenshots/ThreeCreative-Saviour-0.1.0-on-Curiosity.png
+![ThreeCreative OS Saviour on Curiosity](tiles-desktop.png)
 
-> Placeholder for product screenshots and desktop captures.
->
-> Add images here in the future:
-> - Boot screen
-> - Desktop overview
-> - App launcher or menu
-> - File manager / command prompt window
-> - Settings or system utilities
+*ThreeCreative OS Saviour 0.1.0 running on Curiosity, showing the desktop tiles, clock, calculator, files, and settings interface.*
 
 ## System requirements
 
