@@ -14,6 +14,19 @@ This project is a concept OS distribution focused on a nostalgic, lightweight de
 - Built for early testing and demonstration purposes
 - Designed and distributed by ThreeCreative
 
+## Features
+
+Saviour includes the following features out of the box:
+
+- Tile interface — the desktop is made up of separate tiles (clock, notepad, calculator, file manager, etc.) that can host different apps.
+- Mouse control — full mouse support alongside keyboard navigation.
+- Drivers — built-in support for storage, network cards, and common peripherals (Saviour uses Curiosity's driver stack).
+- Games — a small built-in games collection launchable from the UI.
+- Octell — ThreeCreative's built-in web browser (runs in the DOS background environment where applicable).
+- Wifi — wireless network connectivity with support for secured networks.
+- Settings — a central control panel for system, network, and display settings.
+- Defender — built-in security software to scan for threats and protect the system.
+
 ## Screenshots
 
 ![ThreeCreative OS Saviour on Curiosity](tiles-desktop.png)
@@ -53,43 +66,9 @@ This is an early alpha project. It may contain incomplete functionality, rough U
 
 WARNING: This project is not a safe replacement for a production system. Do not write the image to a drive containing important data without a backup. Always test in a VM or on a disposable device first.
 
-## Features in this alpha release
-
-- Desktop-style environment inspired by classic computing interfaces
-- Basic app launcher / windowed layout
-- Built-in command prompt access
-- Apps, games, drivers, and basic utilities included in the image
-- Early-stage system identity and user-facing experience
-
-## License and rights
-
-This repository and its contents, including the bootable disk image, branding, artwork, and project material, are the proprietary property of ThreeCreative.
-
-All rights are reserved. No redistribution, resale, modification, or reuse is permitted without explicit written permission from ThreeCreative.
-
-If you are evaluating this project for personal, educational, or test use, you may do so only in accordance with the project terms and the applicable commercial/licensing instructions supplied by ThreeCreative.
-
-## Support and contact
-
-For support, commercial inquiries, licensing, or purchase information, contact:
-
-- Website: https://ThreeCreative.nl
-- Project owner: ThreeCreative
-
-## Roadmap
-
-Planned improvements for future releases include:
-
-- More polished desktop UX
-- More stable system boot behavior
-- Expanded app and utility set
-- Better driver compatibility and installation flow
-- More polished packaging and visual branding
-- Improved distribution and release delivery
-
 ## Project status
 
-Status: Alpha prototype / early demo build
+Status: In development — Saviour is built on the same foundation as ThreeCreative-DOS Curiosity. Curiosity itself is finished with almost no errors and provides the underlying DOS environment and driver stack that Saviour uses. The DOS environment also supplies the Octell browser that Saviour can access.
 
 This release is intended to demonstrate the concept and gather feedback, evaluation, and interest. It is not presented as a finished commercial product or open-source OS distribution.
 
